@@ -6,7 +6,7 @@ module.exports = {
     database: process.env.DB_DATABASE_NAME,
     host: process.env.DB_HOST,
     dialect: "mysql",
-    logging: false,
+    logging: true,
     query: { raw: true },
     timezone: "+07:00",
   },
