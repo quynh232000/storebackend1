@@ -10,6 +10,10 @@ const uploadAvatarCloud = require("../middleWare/uploadCloundinary");
 const router = express.Router();
 
 const initWebRoutes = (app) => {
+  router.get("/", (req, res) => {
+    res.set("Content-Type", "text/html;charset=utf-8");
+    res.send("<h1>hello quynh</h1>");
+  });
   // user
   router.post(
     "/sign-up-user",
