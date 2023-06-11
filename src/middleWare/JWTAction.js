@@ -25,7 +25,7 @@ const authorToken = (req, res, next) => {
   const authorizationHeader = req.headers["authorization"];
   // console.log("quynh", authorizationHeader);
   // return;
-  const token = authorizationHeader?.split(" ")[1];
+  const token = authorizationHeader.split(" ")[1];
 
   if (!token) return res.sendStatus(401);
   const data = verifyToken(token);

@@ -6,7 +6,7 @@ cloudinary.v2.config({
 });
 
 const uploadAvatarCloud = async (req, res, next) => {
-  const file = req.files?.avatar;
+  const file = req.files.avatar;
   if (!file) {
     return res.status(200).json({
       errCode: 1,
