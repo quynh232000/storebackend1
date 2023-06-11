@@ -23,6 +23,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use(cors());
+app.options("*", cors());
 app.use(
   fileUpload({
     useTempFiles: true,
