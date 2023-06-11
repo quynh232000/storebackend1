@@ -38,5 +38,3 @@ initWebRoutes(app);
 
 connectDB();
 app.listen();
-// const port = process.env.PORT || 6969;
-app.listen();
