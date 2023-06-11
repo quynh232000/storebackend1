@@ -38,7 +38,7 @@ const createANewUser = (req) => {
         !req.body.password ||
         !req.body.nickName ||
         !req.body.phoneNumber ||
-        !req.file?.url
+        !req.file.url
       ) {
         resolve({
           errCode: 1,
