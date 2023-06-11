@@ -4,7 +4,7 @@ const { sendSimpleEmail } = require("./emailService");
 const createNewProduct = (req) => {
   return new Promise(async (resolve, reject) => {
     try {
-      if (!req.body.name || !req.file?.url || !req.body.group) {
+      if (!req.body.name || !req.file.url || !req.body.group) {
         resolve({
           errCode: 1,
           errMessage: "Missing required parameter",
@@ -343,7 +343,7 @@ const getProductBooking = (id) => {
 const getBookingStatus = (req) => {
   return new Promise(async (resolve, reject) => {
     try {
-      if (!req.query?.status) {
+      if (!req.query.status) {
         resolve({
           errCode: 2,
           message: "Missing parameter",

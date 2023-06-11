@@ -182,10 +182,10 @@ const handleUpdateUser = (req) => {
       });
 
       if (user) {
-        user.nickName = req.body?.nickName || user.nickName;
-        user.address = req.body?.address || user.address;
-        user.phoneNumber = req.body?.phoneNumber || user.phoneNumber;
-        user.image = req.body?.image || user.image;
+        user.nickName = req.body.nickName || user.nickName;
+        user.address = req.body.address || user.address;
+        user.phoneNumber = req.body.phoneNumber || user.phoneNumber;
+        user.image = req.body.image || user.image;
 
         await user.save();
         resolve({
